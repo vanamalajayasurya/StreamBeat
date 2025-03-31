@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamBeat</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1 class="text-3xl font-bold underline">
+      </h1>
+    <section class="navbar">
+        <nav>
+            <ul>
+                <li id="brand"><img src="mine.svg" alt="Spotify" srcset="">StreamBeat</li>
+                <div id="info">
+
+                    <li class="Home" onclick="toggleHome()">Home
+                        <div class="subHome">
+                            <ul>
+                                <li >My album</li>
+                                <li>Favorite</li>
+                                <li>Downloads</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>About</li>
+                    
+                </div>
+                <!-- <button>Click</button> -->
+            </ul>
+           
+            <div class="search"  >
+                <img onclick="toggleBar()" name="search-outline" src="magnifying-glass-solid.svg" alt="">
+                <input  type="text" placeholder="SEARCH">
+            </div>
+        </nav>
+    </section>
+
+    <section class="container">
+       
+        <div class="songList">
+            <h1 class="heading">Best of NCS-No Copyright Songs</h1>
+            <div class="songitemContainer">
+
+                <!-- Song-1 -->
+                <div class="songItem">
+
+                    <img  class="img" src="lion.jpg" alt="">
+                    <span>Torn apart</span>
+                    <span class="songListPlay"><span  class="timeSpanAndIcon">5:34 <img  id="icon" src="circle-play-regular.svg" alt="icon2"  onclick="sng1()"></span></span>
+                </div>
+                    <!-- <button><img src="./imgs/svgs/circle-pause-regular.svg" alt="icon1"></button> -->
+                
+                <!-- Song-2 -->
+                <div class="songItem">
+
+                    <img  class="img"src="pexels-akwice-3094799.jpg" alt="">
+                    <span>Royalty</span>
+                    <span class="songListPlay"><span class="timeSpanAndIcon">5:34 <img id="icon" src="circle-play-regular.svg" alt="icon2" onclick="sng2()"></span></span>
+                </div>
+
+                <!-- Song-3 -->
+                <div class="songItem">
+
+                    <img  class="img" src="unity.png" alt="">
+                    <span>Unity</span>
+                    <span class="songListPlay"><span class="timeSpanAndIcon">5:34 <img id="icon" src="circle-play-regular.svg" alt="icon2"  onclick="sng3()"></span></span>
+                </div>
+
+                <!-- Song-4 -->
+                <div class="songItem">
+
+                    <img class="img" src="pexels-sebastiaan9977-1097456.jpg" alt="">
+                    <span>Faded</span>
+                    <span class="songListPlay"><span class="timeSpanAndIcon">5:34 <img id="icon" src="circle-play-regular.svg" alt="icon2"  onclick="sng4()"></span></span>
+                </div>
+
+
+                <!-- Song-5 -->
+                <div class="songItem">
+
+                    <img class="img" src="pexels-pixabay-207353 copy.jpg" alt="">
+                    <span>Attention</span>
+                    <span class="songListPlay"><span class="timeSpanAndIcon">5:34 <img id="icon" src="circle-play-regular.svg" alt="icon2"  onclick="sng5()"></span></span>
+                </div>
+
+
+                 <!-- Song-6 -->
+                 <div class="songItem">
+
+                    <img class="img" src="unholy.png" alt="">
+                    <span>Unholy</span>
+                    <span class="songListPlay"><span class="timeSpanAndIcon">5:34 <img id="icon" src="circle-play-regular.svg" alt="icon2" onclick="sng6()"></span></span>
+                </div>
+
+                  <!-- Song-7 -->
+                <div class="songItem">
+
+                    <img class="img" src="afreen.png" alt="">
+                    <span>Afreen Afreen</span>
+                    <span class="songListPlay"><span class="timeSpanAndIcon">5:34 <img id="icon" src="circle-play-regular.svg" alt="icon2"  onclick="sng7()"></span></span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="SongBanner">
+
+        </div>
+       
+    </section>
+
+    <section class="bottom">
+         <!-- Control the Song -->
+              <input type="range" name="range" id="myProgress" min="0" max="100">
+
+
+            <div class="icons">
+                <!-- FontAwesome Icons -->
+                    <button><img src="backward-fast-solid.svg" alt="icon1"></button>
+                    <!-- <button><img src="./imgs/svgs/circle-pause-regular.svg" alt="icon1"></button> -->
+                    <button    onclick="play()"><img id="masterPlay" src="circle-play-regular.svg" alt="icon2" ></button>
+                    <button><img src="forward-fast-solid.svg" alt="icon3"></button>
+            </div>
+    </section>
+    <script src="script.js"></script>
+
+
+    
+</body>
+</html>
